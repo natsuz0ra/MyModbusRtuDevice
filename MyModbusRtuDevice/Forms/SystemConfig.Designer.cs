@@ -58,7 +58,7 @@
             this.label2 = new AntdUI.Label();
             this.serialPortsDropList = new AntdUI.Dropdown();
             this.label1 = new AntdUI.Label();
-            this.tabs1 = new AntdUI.Tabs();
+            this.tabs = new AntdUI.Tabs();
             this.tabPage1 = new AntdUI.TabPage();
             this.removeVariableBtn1 = new AntdUI.Button();
             this.addVariableBtn1 = new AntdUI.Button();
@@ -70,7 +70,7 @@
             this.color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.min = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.max = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deviceNameInput2 = new AntdUI.Input();
+            this.deviceNameInput1 = new AntdUI.Input();
             this.label11 = new AntdUI.Label();
             this.slaveInput1 = new AntdUI.Input();
             this.label10 = new AntdUI.Label();
@@ -78,7 +78,7 @@
             this.tabPage6 = new AntdUI.TabPage();
             this.tabs5.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tabs1.SuspendLayout();
+            this.tabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -315,24 +315,24 @@
             this.label1.Text = "串口名称";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // tabs1
+            // tabs
             // 
-            this.tabs1.Controls.Add(this.tabPage1);
-            this.tabs1.Controls.Add(this.tabPage4);
-            this.tabs1.Controls.Add(this.tabPage6);
-            this.tabs1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tabs1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tabs1.Location = new System.Drawing.Point(221, 12);
-            this.tabs1.Name = "tabs1";
-            this.tabs1.Pages.Add(this.tabPage1);
-            this.tabs1.Pages.Add(this.tabPage4);
-            this.tabs1.Pages.Add(this.tabPage6);
-            this.tabs1.Size = new System.Drawing.Size(850, 542);
+            this.tabs.Controls.Add(this.tabPage1);
+            this.tabs.Controls.Add(this.tabPage4);
+            this.tabs.Controls.Add(this.tabPage6);
+            this.tabs.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabs.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tabs.Location = new System.Drawing.Point(221, 12);
+            this.tabs.Name = "tabs";
+            this.tabs.Pages.Add(this.tabPage1);
+            this.tabs.Pages.Add(this.tabPage4);
+            this.tabs.Pages.Add(this.tabPage6);
+            this.tabs.Size = new System.Drawing.Size(850, 542);
             styleCard2.Border = 0;
-            this.tabs1.Style = styleCard2;
-            this.tabs1.TabIndex = 3;
-            this.tabs1.Text = "tabs1";
-            this.tabs1.Type = AntdUI.TabType.Card;
+            this.tabs.Style = styleCard2;
+            this.tabs.TabIndex = 3;
+            this.tabs.Text = "tabs1";
+            this.tabs.Type = AntdUI.TabType.Card;
             // 
             // tabPage1
             // 
@@ -340,7 +340,7 @@
             this.tabPage1.Controls.Add(this.removeVariableBtn1);
             this.tabPage1.Controls.Add(this.addVariableBtn1);
             this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.deviceNameInput2);
+            this.tabPage1.Controls.Add(this.deviceNameInput1);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.slaveInput1);
             this.tabPage1.Controls.Add(this.label10);
@@ -359,6 +359,7 @@
             this.removeVariableBtn1.TabIndex = 24;
             this.removeVariableBtn1.Text = "删除变量";
             this.removeVariableBtn1.Type = AntdUI.TTypeMini.Error;
+            this.removeVariableBtn1.Click += new System.EventHandler(this.removeVariableBtn_Click);
             // 
             // addVariableBtn1
             // 
@@ -368,7 +369,7 @@
             this.addVariableBtn1.TabIndex = 23;
             this.addVariableBtn1.Text = "添加变量";
             this.addVariableBtn1.Type = AntdUI.TTypeMini.Success;
-            this.addVariableBtn1.Click += new System.EventHandler(this.addVariableBtn1_Click);
+            this.addVariableBtn1.Click += new System.EventHandler(this.addVariableBtn_Click);
             // 
             // dataGridView1
             // 
@@ -477,12 +478,12 @@
             this.max.ReadOnly = true;
             this.max.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // deviceNameInput2
+            // deviceNameInput1
             // 
-            this.deviceNameInput2.Location = new System.Drawing.Point(259, 9);
-            this.deviceNameInput2.Name = "deviceNameInput2";
-            this.deviceNameInput2.Size = new System.Drawing.Size(260, 35);
-            this.deviceNameInput2.TabIndex = 21;
+            this.deviceNameInput1.Location = new System.Drawing.Point(259, 9);
+            this.deviceNameInput1.Name = "deviceNameInput1";
+            this.deviceNameInput1.Size = new System.Drawing.Size(260, 35);
+            this.deviceNameInput1.TabIndex = 21;
             // 
             // label11
             // 
@@ -535,14 +536,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(244)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(1083, 566);
-            this.Controls.Add(this.tabs1);
+            this.Controls.Add(this.tabs);
             this.Controls.Add(this.tabs5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SystemConfig";
             this.Text = "SystemConfig";
             this.tabs5.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
-            this.tabs1.ResumeLayout(false);
+            this.tabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -571,12 +572,12 @@
         private AntdUI.Label label8;
         private AntdUI.InputNumber readTimeoutInput;
         private AntdUI.Label label7;
-        private AntdUI.Tabs tabs1;
+        private AntdUI.Tabs tabs;
         private AntdUI.TabPage tabPage6;
         private AntdUI.TabPage tabPage4;
         private AntdUI.TabPage tabPage1;
         private AntdUI.Label label10;
-        private AntdUI.Input deviceNameInput2;
+        private AntdUI.Input deviceNameInput1;
         private AntdUI.Label label11;
         private AntdUI.Input slaveInput1;
         private System.Windows.Forms.DataGridView dataGridView1;

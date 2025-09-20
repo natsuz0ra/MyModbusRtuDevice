@@ -13,20 +13,20 @@ namespace MyModbusRtuDevice.Forms
 {
     public partial class AddVariable : Form
     {
-        public Action<byte, VariableModel> AcceptAction { get; set; }
-        private byte slaveId;
+        public Action<int, VariableModel> AcceptAction { get; set; }
+        private int index;
 
-        public AddVariable(byte slaveId)
+        public AddVariable(int index)
         {
             InitializeComponent();
-            this.slaveId = slaveId;
+            this.index = index;
         }
 
         private void confirmBtn_Click(object sender, EventArgs e)
         {
             try
             {
-                AcceptAction?.Invoke(slaveId, new VariableModel
+                AcceptAction?.Invoke(this.index, new VariableModel
                 {
                     Address = Convert.ToUInt16(addrInput.Text),
                     Name = variableNameInput.Text,
