@@ -117,6 +117,12 @@
     <Compile Include="Common\Events\RefreshFormMonitorDataEvent.cs" />
     <Compile Include="Common\Events\ShowLogEvent.cs" />
     <Compile Include="Common\ModbusService.cs" />
+    <Compile Include="Forms\AddVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddVariable.Designer.cs">
+      <DependentUpon>AddVariable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DataTrack.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     <Compile Include="Models\VariableModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddVariable.resx">
+      <DependentUpon>AddVariable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DataTrack.resx">
       <DependentUpon>DataTrack.cs</DependentUpon>
     </EmbeddedResource>

@@ -23,6 +23,12 @@ namespace MyModbusRtuDevice.Models
         public double Rate { get; set; }
         // 偏移量
         public double Offset { get; set; }
+        // 图表颜色
         public Color Color { get; set; }
+    }
+
+    public class SelectedVariableModel : VariableModel
+    {
+        public bool IsSelected { get; set; }
     }
 }

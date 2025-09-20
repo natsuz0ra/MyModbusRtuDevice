@@ -101,6 +101,7 @@ namespace MyModbusRtuDevice.Common
                                         State = "正在告警"
                                     };
                                     alarmEventHandler?.Invoke(alarm);
+                                    showLogEventHandler?.Invoke($"设备[{device.SlaveId}]变量[{v.Address}:{v.Name}]值[{v_d}]告警");
                                 }
                             }
                             else

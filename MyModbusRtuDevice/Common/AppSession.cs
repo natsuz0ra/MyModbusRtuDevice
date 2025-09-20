@@ -15,5 +15,7 @@ namespace MyModbusRtuDevice.Common
 
         // 告警数据列表，仅用于去重，不用于展示
         public static List<AlarmModel> AlarmData = new List<AlarmModel>();
+        // 告警数据列表，用于展示
+        public static BindingList<AlarmModel> AlarmList = new BindingList<AlarmModel>();
     }
 }

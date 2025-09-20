@@ -21,12 +21,10 @@ namespace MyModbusRtuDevice.Forms
             this.Load += StatusAlarm_Load;
         }
 
-        private BindingList<AlarmModel> alarms = new BindingList<AlarmModel>();
-
         private void StatusAlarm_Load(object sender, EventArgs e)
         {
             dataGridView1.AutoGenerateColumns = false;
-            dataGridView1.DataSource = alarms;
+            dataGridView1.DataSource = AppSession.AlarmList;
             datePickerRange.Value = new DateTime[] { DateTime.Now.AddDays(-7), DateTime.Now }; // 默认选择最近一小时
             // 启动时加载历史告警数据
             RefreshData();
@@ -47,7 +45,7 @@ namespace MyModbusRtuDevice.Forms
             this.Invoke(new Action(() =>
             {
                 // 添加到第一项，最新的位于顶上
-                alarms.Insert(0, alarm);
+                AppSession.AlarmList.Insert(0, alarm);
             }));
         }
 
@@ -105,7 +103,7 @@ namespace MyModbusRtuDevice.Forms
                     Time = ((DateTime)item["time"]).ToString("yyyy/MM/dd HH:mm:ss"),
                     State = item["state"].ToString()
                 };
-                alarms.Add(model);
+                AppSession.AlarmList.Add(model);
             }
         }
 
@@ -121,12 +119,12 @@ namespace MyModbusRtuDevice.Forms
             csvData = csvData.TrimEnd(',') + "\n";
 
             // 添加数据行
-            foreach (var col in alarms)
+            foreach (var col in AppSession.AlarmList)
             {
                 // 拼接csv格式数据
                 csvData += $"{col.SlaveId},{col.DeviceName},{col.Address},{col.VariableName},{col.Value},{col.Message},{col.Time},{col.State}\n";
             }
-            // 导出为文件，名称格式为【告警数据_2025_09_14_21_32_00.csv】
+            // 导出为文件，名称格式为【告警数据_yyyy_MM_dd_HH_mm_ss.csv】
             string fileName = $"告警数据_{DateTime.Now.ToString("yyyy_MM_dd_HH_mm_ss")}.csv";
             // 使用System.IO.File.WriteAllText，将文件写到桌面上
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
