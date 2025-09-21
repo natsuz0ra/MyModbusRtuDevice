@@ -15,6 +15,9 @@ namespace MyModbusRtuDevice.Forms
 {
     public partial class StatusAlarm : Form
     {
+        // 历史告警数据
+        private BindingList<AlarmModel> historyAlarmList = new BindingList<AlarmModel>();
+
         public StatusAlarm()
         {
             InitializeComponent();
@@ -25,9 +28,11 @@ namespace MyModbusRtuDevice.Forms
         {
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = AppSession.AlarmList;
+            dataGridView2.AutoGenerateColumns = false;
+            dataGridView2.DataSource = historyAlarmList;
             datePickerRange.Value = new DateTime[] { DateTime.Now.AddDays(-7), DateTime.Now }; // 默认选择最近一小时
-            // 启动时加载历史告警数据
-            RefreshData();
+            // 启动时加载近期的告警数据，实时数据为近期数据+最新实时数据
+            InitRealTimeData();
         }
 
         /// <summary>
@@ -51,7 +56,7 @@ namespace MyModbusRtuDevice.Forms
 
         private void alarmProcBtn_Click(object sender, EventArgs e)
         {
-            foreach (AlarmModel row in AppSession.AlarmData)
+            foreach (AlarmModel row in AppSession.AlarmList)
             {
                 if (row.IsSelected)
                 {
@@ -62,7 +67,7 @@ namespace MyModbusRtuDevice.Forms
                 }
             }
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = AppSession.AlarmData;
+            dataGridView1.DataSource = AppSession.AlarmList;
         }
 
         private void dataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
@@ -72,7 +77,7 @@ namespace MyModbusRtuDevice.Forms
 
         private void SetStateColor(int index)
         {
-            if (AppSession.AlarmData[index].State.Equals("正在告警"))
+            if (AppSession.AlarmList[index].State.Equals("正在告警"))
                 dataGridView1.Rows[index].Cells["state"].Style.ForeColor = Color.Red;
             else
                 dataGridView1.Rows[index].Cells["state"].Style.ForeColor = Color.ForestGreen;
@@ -80,13 +85,44 @@ namespace MyModbusRtuDevice.Forms
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
-            RefreshData();
+            GetHistoryData();
         }
 
-        private void RefreshData()
+        /// <summary>
+        /// 查询历史告警数据
+        /// </summary>
+        private void GetHistoryData()
         {
             var startTime = datePickerRange.Value[0];
             var endTime = datePickerRange.Value[1];
+
+            var dt = AppSession.DBService.GetAlarmsByTime(startTime, endTime);
+            historyAlarmList.Clear();
+            foreach (var item in dt.AsEnumerable())
+            {
+                AlarmModel model = new AlarmModel()
+                {
+                    Id = Convert.ToInt32(item["id"]),
+                    SlaveId = Convert.ToInt32(item["d_id"]),
+                    DeviceName = item["d_name"].ToString(),
+                    Address = item["addr"].ToString(),
+                    VariableName = item["v_name"].ToString(),
+                    Value = Convert.ToDouble(item["value"]),
+                    Message = item["message"].ToString(),
+                    Time = ((DateTime)item["time"]).ToString("yyyy/MM/dd HH:mm:ss"),
+                    State = item["state"].ToString()
+                };
+                historyAlarmList.Add(model);
+            }
+        }
+
+        /// <summary>
+        /// 初始化实时告警数据
+        /// </summary>
+        private void InitRealTimeData()
+        {
+            var startTime = DateTime.Now.AddDays(-7);
+            var endTime = DateTime.Now;
 
             var dt = AppSession.DBService.GetAlarmsByTime(startTime, endTime);
             foreach (var item in dt.AsEnumerable())
@@ -107,6 +143,11 @@ namespace MyModbusRtuDevice.Forms
             }
         }
 
+        /// <summary>
+        /// 导出查询到的告警记录
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exportBtn_Click(object sender, EventArgs e)
         {
             string csvData = "";
@@ -119,7 +160,7 @@ namespace MyModbusRtuDevice.Forms
             csvData = csvData.TrimEnd(',') + "\n";
 
             // 添加数据行
-            foreach (var col in AppSession.AlarmList)
+            foreach (var col in historyAlarmList)
             {
                 // 拼接csv格式数据
                 csvData += $"{col.SlaveId},{col.DeviceName},{col.Address},{col.VariableName},{col.Value},{col.Message},{col.Time},{col.State}\n";
