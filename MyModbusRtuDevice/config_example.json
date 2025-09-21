@@ -1,0 +1,61 @@
+{
+  "PortName": "COM1",
+  "BaudRate": 9600,
+  "DateBit": 8,
+  "Parity": 0,
+  "StopBits": 1,
+  "ReadBuffterSize": 4096,
+  "ReadTimeout": 1000,
+  "WriteBuffterSize": 4096,
+  "WriteTimeout": 1000,
+  "DeviceList": [
+    {
+      "SlaveId": 1,
+      "Name": "设备1",
+      "Variable": [
+        {
+          "Address": 0,
+          "Name": "点位1",
+          "Value": null,
+          "Min": 0.0,
+          "Max": 100.0,
+          "Rate": 1.0,
+          "Offset": 0.0,
+          "Color": "Red"
+        }
+      ]
+    },
+    {
+      "SlaveId": 2,
+      "Name": "设备2",
+      "Variable": [
+        {
+          "Address": 0,
+          "Name": "点位1",
+          "Value": null,
+          "Min": 0.0,
+          "Max": 100.0,
+          "Rate": 1.0,
+          "Offset": 0.0,
+          "Color": "Red"
+        }
+      ]
+    },
+    {
+      "SlaveId": 3,
+      "Name": "设备3",
+      "Variable": [
+        {
+          "Address": 0,
+          "Name": "点位1",
+          "Value": null,
+          "Min": 0.0,
+          "Max": 100.0,
+          "Rate": 1.0,
+          "Offset": 0.0,
+          "Color": "Red"
+        }
+      ]
+    }
+  ]
+}
