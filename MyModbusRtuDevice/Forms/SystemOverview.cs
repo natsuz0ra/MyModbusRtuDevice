@@ -1,4 +1,5 @@
-﻿using MyModbusRtuDevice.Common;
+﻿using AntdUI;
+using MyModbusRtuDevice.Common;
 using MyModbusRtuDevice.Models;
 using Newtonsoft.Json.Linq;
 using System;
@@ -7,6 +8,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -47,6 +49,14 @@ namespace MyModbusRtuDevice.Forms
                 uiPipe14.Invalidate();
             };
             timer.Start();
+
+            pressureMax.Text = Int32.MinValue.ToString();
+            trafficMax.Text = Int32.MinValue.ToString();
+            leakageMax.Text = Int32.MinValue.ToString();
+
+            pressureMin.Text = Int32.MaxValue.ToString();
+            trafficMin.Text = Int32.MaxValue.ToString();
+            leakageMin.Text = Int32.MaxValue.ToString();
         }
 
         /// <summary>
@@ -75,6 +85,15 @@ namespace MyModbusRtuDevice.Forms
                         rpMainPipePressure.Value = int.TryParse(device.Variable.Find(v => v.Address == 10)?.Value?.ToString(), out int pressure) ? pressure : 0;
                         rpMainPipeTraffic.Value = int.TryParse(device.Variable.Find(v => v.Address == 11)?.Value?.ToString(), out int traffic) ? traffic : 0;
                         rpMainPipeLeakage.Value = int.TryParse(device.Variable.Find(v => v.Address == 12)?.Value?.ToString(), out int leakage) ? leakage : 0;
+
+                        pressureMax.Text = Convert.ToInt32(pressureMax.Text) < rpMainPipePressure.Value ? rpMainPipePressure.Value.ToString() : pressureMax.Text;
+                        pressureMin.Text = Convert.ToInt32(pressureMin.Text) > rpMainPipePressure.Value ? rpMainPipePressure.Value.ToString() : pressureMin.Text;
+
+                        trafficMax.Text = Convert.ToInt32(trafficMax.Text) < rpMainPipeTraffic.Value ? rpMainPipeTraffic.Value.ToString() : trafficMax.Text;
+                        trafficMin.Text = Convert.ToInt32(trafficMin.Text) > rpMainPipeTraffic.Value ? rpMainPipeTraffic.Value.ToString() : trafficMin.Text;
+
+                        leakageMax.Text = Convert.ToInt32(leakageMax.Text) < rpMainPipeLeakage.Value ? rpMainPipeLeakage.Value.ToString() : leakageMax.Text;
+                        leakageMin.Text = Convert.ToInt32(leakageMin.Text) > rpMainPipeLeakage.Value ? rpMainPipeLeakage.Value.ToString() : leakageMin.Text;
                     }
                     else if (device.SlaveId == 3)
                     {
@@ -190,6 +209,38 @@ namespace MyModbusRtuDevice.Forms
             if (!ok)
             {
                 sw.Active = !sw.Active;
+            }
+        }
+
+        /// <summary>
+        /// 连接事件
+        /// </summary>
+        public void OnConnect()
+        {
+            SetPipeAction(true);
+        }
+
+        /// <summary>
+        /// 断开事件
+        /// </summary>
+        /// <param name="active"></param>
+        public void OnDisconnect()
+        {
+            SetPipeAction(false);
+        }
+
+        /// <summary>
+        /// 设置管道控件流动状态
+        /// </summary>
+        /// <param name="active"></param>
+        private void SetPipeAction(bool active)
+        {
+            foreach (var ctl in this.Controls)
+            {
+                Sunny.UI.UIPipe uIPipe = ctl as Sunny.UI.UIPipe;
+                if (uIPipe == null)
+                    continue;
+                uIPipe.Active = active;
             }
         }
     }

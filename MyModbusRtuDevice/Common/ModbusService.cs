@@ -31,6 +31,10 @@ namespace MyModbusRtuDevice.Common
         private ShowLogEventHandler showLogEventHandler;
         // 告警事件
         private AlarmEventHandler alarmEventHandler;
+        // 连接事件
+        private ConnectEventHandler connectEventHandler;
+        // 断开事件
+        private DisconnectEventHandler disconnectEventHandler;
 
         public ModbusService()
         {
@@ -135,6 +139,7 @@ namespace MyModbusRtuDevice.Common
                 serialPort.Close(); // 取消任务时关闭串口
             }, cts.Token);
             isConnected = true;
+            connectEventHandler?.Invoke();
         }
 
         /// <summary>
@@ -150,6 +155,7 @@ namespace MyModbusRtuDevice.Common
             isConnected = false; // 设置连接状态为未连接
 
             ShowLog("通信已断开。");
+            disconnectEventHandler?.Invoke();
         }
 
         /// <summary>
@@ -231,6 +237,15 @@ namespace MyModbusRtuDevice.Common
             File.WriteAllText("config.json", data);
         }
 
+        /// <summary>
+        /// 保存配置到json文件
+        /// </summary>
+        public void SaveCommunicationModel()
+        {
+            string data = JsonConvert.SerializeObject(cm);
+            File.WriteAllText("config.json", data);
+        }
+
         public void SubscribeConnectErrorEvent(ConnectErrorEventHandler handler)
         {
             if (handler == null) return;
@@ -266,6 +281,26 @@ namespace MyModbusRtuDevice.Common
                 // 先取消订阅，防止重复订阅
                 alarmEventHandler -= handler;
                 alarmEventHandler += handler;
+            }
+        }
+
+        public void SubscribeConnectEvent(ConnectEventHandler handler)
+        {
+            if (handler != null)
+            {
+                // 先取消订阅，防止重复订阅
+                connectEventHandler -= handler;
+                connectEventHandler += handler;
+            }
+        }
+
+        public void SubscribeDisconnectEvent(DisconnectEventHandler handler)
+        {
+            if (handler != null)
+            {
+                // 先取消订阅，防止重复订阅
+                disconnectEventHandler -= handler;
+                disconnectEventHandler += handler;
             }
         }
 

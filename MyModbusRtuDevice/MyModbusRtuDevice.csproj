@@ -114,6 +114,8 @@
     <Compile Include="Common\DBService.cs" />
     <Compile Include="Common\Events\AlarmEvent.cs" />
     <Compile Include="Common\Events\ConnectErrorEvent.cs" />
+    <Compile Include="Common\Events\ConnectEvent.cs" />
+    <Compile Include="Common\Events\DisconnectEvent.cs" />
     <Compile Include="Common\Events\RefreshFormMonitorDataEvent.cs" />
     <Compile Include="Common\Events\ShowLogEvent.cs" />
     <Compile Include="Common\ModbusService.cs" />

@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            AntdUI.Tabs.StyleCard styleCard6 = new AntdUI.Tabs.StyleCard();
-            AntdUI.Tabs.StyleCard styleCard7 = new AntdUI.Tabs.StyleCard();
-            AntdUI.Tabs.StyleCard styleCard8 = new AntdUI.Tabs.StyleCard();
-            AntdUI.Tabs.StyleCard styleCard9 = new AntdUI.Tabs.StyleCard();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint21 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 32D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint22 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 10D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint23 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 43D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint24 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 21D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint25 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 35D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint26 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 12D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint27 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 83D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint28 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 36D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint29 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 68D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint30 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 92D);
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint31 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 32D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint32 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 10D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint33 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 43D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint34 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 21D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint35 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 35D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint36 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 12D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint37 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 83D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint38 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 36D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint39 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 68D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint40 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 92D);
+            AntdUI.Tabs.StyleCard styleCard1 = new AntdUI.Tabs.StyleCard();
+            AntdUI.Tabs.StyleCard styleCard2 = new AntdUI.Tabs.StyleCard();
+            AntdUI.Tabs.StyleCard styleCard3 = new AntdUI.Tabs.StyleCard();
+            AntdUI.Tabs.StyleCard styleCard4 = new AntdUI.Tabs.StyleCard();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 32D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 10D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 43D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 21D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 35D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 12D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 83D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint8 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 36D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint9 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 68D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint10 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 92D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint11 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 32D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint12 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 10D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint13 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 43D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint14 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 21D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint15 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(5D, 35D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint16 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 12D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint17 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(7D, 83D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint18 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(8D, 36D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint19 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(9D, 68D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint20 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(10D, 92D);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SystemOverview));
-            AntdUI.Tabs.StyleCard styleCard10 = new AntdUI.Tabs.StyleCard();
+            AntdUI.Tabs.StyleCard styleCard5 = new AntdUI.Tabs.StyleCard();
             this.tabs1 = new AntdUI.Tabs();
             this.tabPage1 = new AntdUI.TabPage();
             this.labelErrNum = new AntdUI.Label();
@@ -74,12 +74,12 @@
             this.label12 = new AntdUI.Label();
             this.label23 = new AntdUI.Label();
             this.label22 = new AntdUI.Label();
-            this.label21 = new AntdUI.Label();
-            this.label16 = new AntdUI.Label();
-            this.label11 = new AntdUI.Label();
-            this.label20 = new AntdUI.Label();
-            this.label15 = new AntdUI.Label();
-            this.label10 = new AntdUI.Label();
+            this.leakageMin = new AntdUI.Label();
+            this.trafficMin = new AntdUI.Label();
+            this.pressureMin = new AntdUI.Label();
+            this.leakageMax = new AntdUI.Label();
+            this.trafficMax = new AntdUI.Label();
+            this.pressureMax = new AntdUI.Label();
             this.label19 = new AntdUI.Label();
             this.label14 = new AntdUI.Label();
             this.label9 = new AntdUI.Label();
@@ -202,8 +202,8 @@
             this.tabs1.Name = "tabs1";
             this.tabs1.Pages.Add(this.tabPage1);
             this.tabs1.Size = new System.Drawing.Size(200, 120);
-            styleCard6.Border = 0;
-            this.tabs1.Style = styleCard6;
+            styleCard1.Border = 0;
+            this.tabs1.Style = styleCard1;
             this.tabs1.TabIndex = 0;
             this.tabs1.Text = "tabs1";
             this.tabs1.Type = AntdUI.TabType.Card;
@@ -296,8 +296,8 @@
             this.tabs2.Name = "tabs2";
             this.tabs2.Pages.Add(this.tabPage2);
             this.tabs2.Size = new System.Drawing.Size(653, 120);
-            styleCard7.Border = 0;
-            this.tabs2.Style = styleCard7;
+            styleCard2.Border = 0;
+            this.tabs2.Style = styleCard2;
             this.tabs2.TabIndex = 1;
             this.tabs2.Text = "tabs2";
             this.tabs2.Type = AntdUI.TabType.Card;
@@ -311,12 +311,12 @@
             this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.label23);
             this.tabPage2.Controls.Add(this.label22);
-            this.tabPage2.Controls.Add(this.label21);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.label20);
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.leakageMin);
+            this.tabPage2.Controls.Add(this.trafficMin);
+            this.tabPage2.Controls.Add(this.pressureMin);
+            this.tabPage2.Controls.Add(this.leakageMax);
+            this.tabPage2.Controls.Add(this.trafficMax);
+            this.tabPage2.Controls.Add(this.pressureMax);
             this.tabPage2.Controls.Add(this.label19);
             this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.label9);
@@ -412,65 +412,65 @@
             this.label22.TabIndex = 13;
             this.label22.Text = "";
             // 
-            // label21
+            // leakageMin
             // 
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Location = new System.Drawing.Point(580, 67);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 15);
-            this.label21.TabIndex = 12;
-            this.label21.Text = "11.2";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.leakageMin.BackColor = System.Drawing.Color.Transparent;
+            this.leakageMin.Location = new System.Drawing.Point(580, 67);
+            this.leakageMin.Name = "leakageMin";
+            this.leakageMin.Size = new System.Drawing.Size(41, 15);
+            this.leakageMin.TabIndex = 12;
+            this.leakageMin.Text = "0";
+            this.leakageMin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label16
+            // trafficMin
             // 
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Location = new System.Drawing.Point(360, 67);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 15);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "11.2";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.trafficMin.BackColor = System.Drawing.Color.Transparent;
+            this.trafficMin.Location = new System.Drawing.Point(360, 67);
+            this.trafficMin.Name = "trafficMin";
+            this.trafficMin.Size = new System.Drawing.Size(41, 15);
+            this.trafficMin.TabIndex = 12;
+            this.trafficMin.Text = "0";
+            this.trafficMin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label11
+            // pressureMin
             // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(139, 67);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 15);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "11.2";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pressureMin.BackColor = System.Drawing.Color.Transparent;
+            this.pressureMin.Location = new System.Drawing.Point(139, 67);
+            this.pressureMin.Name = "pressureMin";
+            this.pressureMin.Size = new System.Drawing.Size(41, 15);
+            this.pressureMin.TabIndex = 12;
+            this.pressureMin.Text = "0";
+            this.pressureMin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label20
+            // leakageMax
             // 
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Location = new System.Drawing.Point(580, 30);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 15);
-            this.label20.TabIndex = 11;
-            this.label20.Text = "45.2";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.leakageMax.BackColor = System.Drawing.Color.Transparent;
+            this.leakageMax.Location = new System.Drawing.Point(580, 30);
+            this.leakageMax.Name = "leakageMax";
+            this.leakageMax.Size = new System.Drawing.Size(41, 15);
+            this.leakageMax.TabIndex = 11;
+            this.leakageMax.Text = "45";
+            this.leakageMax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label15
+            // trafficMax
             // 
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(360, 30);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 15);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "45.2";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.trafficMax.BackColor = System.Drawing.Color.Transparent;
+            this.trafficMax.Location = new System.Drawing.Point(360, 30);
+            this.trafficMax.Name = "trafficMax";
+            this.trafficMax.Size = new System.Drawing.Size(41, 15);
+            this.trafficMax.TabIndex = 11;
+            this.trafficMax.Text = "45";
+            this.trafficMax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label10
+            // pressureMax
             // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(139, 30);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 15);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "45.2";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.pressureMax.BackColor = System.Drawing.Color.Transparent;
+            this.pressureMax.Location = new System.Drawing.Point(139, 30);
+            this.pressureMax.Name = "pressureMax";
+            this.pressureMax.Size = new System.Drawing.Size(41, 15);
+            this.pressureMax.TabIndex = 11;
+            this.pressureMax.Text = "45";
+            this.pressureMax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label19
             // 
@@ -578,8 +578,8 @@
             this.tabs3.Name = "tabs3";
             this.tabs3.Pages.Add(this.tabPage3);
             this.tabs3.Size = new System.Drawing.Size(196, 120);
-            styleCard8.Border = 0;
-            this.tabs3.Style = styleCard8;
+            styleCard3.Border = 0;
+            this.tabs3.Style = styleCard3;
             this.tabs3.TabIndex = 1;
             this.tabs3.Text = "tabs3";
             this.tabs3.Type = AntdUI.TabType.Card;
@@ -670,8 +670,8 @@
             this.tabs4.Name = "tabs4";
             this.tabs4.Pages.Add(this.tabPage4);
             this.tabs4.Size = new System.Drawing.Size(197, 414);
-            styleCard9.Border = 0;
-            this.tabs4.Style = styleCard9;
+            styleCard4.Border = 0;
+            this.tabs4.Style = styleCard4;
             this.tabs4.TabIndex = 2;
             this.tabs4.Text = "tabs4";
             this.tabs4.Type = AntdUI.TabType.Card;
@@ -785,73 +785,73 @@
             // 
             // chart2
             // 
-            chartArea3.AxisX.Interval = 1D;
-            chartArea3.AxisX.IsLabelAutoFit = false;
-            chartArea3.AxisX.LabelAutoFitMaxFontSize = 6;
-            chartArea3.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            chartArea3.AxisX.LineWidth = 0;
-            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
-            chartArea3.AxisY.IsLabelAutoFit = false;
-            chartArea3.AxisY.LabelAutoFitMaxFontSize = 5;
-            chartArea3.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            chartArea3.AxisY.LineColor = System.Drawing.Color.LightGray;
-            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea3.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea3);
+            chartArea1.AxisX.Interval = 1D;
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelAutoFitMaxFontSize = 6;
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            chartArea1.AxisX.LineWidth = 0;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
+            chartArea1.AxisY.IsLabelAutoFit = false;
+            chartArea1.AxisY.LabelAutoFitMaxFontSize = 5;
+            chartArea1.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            chartArea1.AxisY.LineColor = System.Drawing.Color.LightGray;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
             this.chart2.Location = new System.Drawing.Point(-7, 155);
             this.chart2.Name = "chart2";
-            series3.ChartArea = "ChartArea1";
-            series3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            series3.Name = "Series1";
-            series3.Points.Add(dataPoint21);
-            series3.Points.Add(dataPoint22);
-            series3.Points.Add(dataPoint23);
-            series3.Points.Add(dataPoint24);
-            series3.Points.Add(dataPoint25);
-            series3.Points.Add(dataPoint26);
-            series3.Points.Add(dataPoint27);
-            series3.Points.Add(dataPoint28);
-            series3.Points.Add(dataPoint29);
-            series3.Points.Add(dataPoint30);
-            this.chart2.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series1.Name = "Series1";
+            series1.Points.Add(dataPoint1);
+            series1.Points.Add(dataPoint2);
+            series1.Points.Add(dataPoint3);
+            series1.Points.Add(dataPoint4);
+            series1.Points.Add(dataPoint5);
+            series1.Points.Add(dataPoint6);
+            series1.Points.Add(dataPoint7);
+            series1.Points.Add(dataPoint8);
+            series1.Points.Add(dataPoint9);
+            series1.Points.Add(dataPoint10);
+            this.chart2.Series.Add(series1);
             this.chart2.Size = new System.Drawing.Size(204, 101);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
             // chart1
             // 
-            chartArea4.AxisX.Interval = 1D;
-            chartArea4.AxisX.IsLabelAutoFit = false;
-            chartArea4.AxisX.LabelAutoFitMaxFontSize = 6;
-            chartArea4.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            chartArea4.AxisX.LineWidth = 0;
-            chartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
-            chartArea4.AxisY.IsLabelAutoFit = false;
-            chartArea4.AxisY.LabelAutoFitMaxFontSize = 5;
-            chartArea4.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
-            chartArea4.AxisY.LineColor = System.Drawing.Color.LightGray;
-            chartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea4.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
+            chartArea2.AxisX.Interval = 1D;
+            chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.LabelAutoFitMaxFontSize = 6;
+            chartArea2.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            chartArea2.AxisX.LineWidth = 0;
+            chartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
+            chartArea2.AxisY.IsLabelAutoFit = false;
+            chartArea2.AxisY.LabelAutoFitMaxFontSize = 5;
+            chartArea2.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F);
+            chartArea2.AxisY.LineColor = System.Drawing.Color.LightGray;
+            chartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Location = new System.Drawing.Point(-7, 29);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            series4.Name = "Series1";
-            series4.Points.Add(dataPoint31);
-            series4.Points.Add(dataPoint32);
-            series4.Points.Add(dataPoint33);
-            series4.Points.Add(dataPoint34);
-            series4.Points.Add(dataPoint35);
-            series4.Points.Add(dataPoint36);
-            series4.Points.Add(dataPoint37);
-            series4.Points.Add(dataPoint38);
-            series4.Points.Add(dataPoint39);
-            series4.Points.Add(dataPoint40);
-            this.chart1.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            series2.Name = "Series1";
+            series2.Points.Add(dataPoint11);
+            series2.Points.Add(dataPoint12);
+            series2.Points.Add(dataPoint13);
+            series2.Points.Add(dataPoint14);
+            series2.Points.Add(dataPoint15);
+            series2.Points.Add(dataPoint16);
+            series2.Points.Add(dataPoint17);
+            series2.Points.Add(dataPoint18);
+            series2.Points.Add(dataPoint19);
+            series2.Points.Add(dataPoint20);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(204, 101);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -880,7 +880,6 @@
             // 
             // uiPipe1
             // 
-            this.uiPipe1.Active = true;
             this.uiPipe1.FlowColor = System.Drawing.Color.DodgerBlue;
             this.uiPipe1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe1.Location = new System.Drawing.Point(223, 157);
@@ -932,7 +931,6 @@
             // 
             // uiPipe2
             // 
-            this.uiPipe2.Active = true;
             this.uiPipe2.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.uiPipe2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe2.Location = new System.Drawing.Point(223, 355);
@@ -989,7 +987,6 @@
             // 
             // uiPipe3
             // 
-            this.uiPipe3.Active = true;
             this.uiPipe3.Direction = Sunny.UI.UILine.LineDirection.Vertical;
             this.uiPipe3.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.uiPipe3.FlowDirection = Sunny.UI.UIPipe.UIFlowDirection.Reverse;
@@ -1010,7 +1007,6 @@
             // 
             // uiPipe4
             // 
-            this.uiPipe4.Active = true;
             this.uiPipe4.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.uiPipe4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe4.Location = new System.Drawing.Point(223, 496);
@@ -1083,7 +1079,6 @@
             // 
             // uiPipe5
             // 
-            this.uiPipe5.Active = true;
             this.uiPipe5.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.uiPipe5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe5.Location = new System.Drawing.Point(403, 450);
@@ -1164,7 +1159,6 @@
             // 
             // uiPipe8
             // 
-            this.uiPipe8.Active = true;
             this.uiPipe8.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.uiPipe8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe8.Location = new System.Drawing.Point(629, 450);
@@ -1194,7 +1188,6 @@
             // 
             // uiPipe9
             // 
-            this.uiPipe9.Active = true;
             this.uiPipe9.Direction = Sunny.UI.UILine.LineDirection.Vertical;
             this.uiPipe9.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.uiPipe9.FlowDirection = Sunny.UI.UIPipe.UIFlowDirection.Reverse;
@@ -1226,7 +1219,6 @@
             // 
             // uiPipe10
             // 
-            this.uiPipe10.Active = true;
             this.uiPipe10.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.uiPipe10.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe10.Location = new System.Drawing.Point(702, 490);
@@ -1245,7 +1237,6 @@
             // 
             // uiPipe11
             // 
-            this.uiPipe11.Active = true;
             this.uiPipe11.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.uiPipe11.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe11.Location = new System.Drawing.Point(569, 293);
@@ -1264,7 +1255,6 @@
             // 
             // uiPipe12
             // 
-            this.uiPipe12.Active = true;
             this.uiPipe12.Direction = Sunny.UI.UILine.LineDirection.Vertical;
             this.uiPipe12.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.uiPipe12.FlowDirection = Sunny.UI.UIPipe.UIFlowDirection.Reverse;
@@ -1338,7 +1328,6 @@
             // 
             // uiPipe13
             // 
-            this.uiPipe13.Active = true;
             this.uiPipe13.Direction = Sunny.UI.UILine.LineDirection.Vertical;
             this.uiPipe13.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.uiPipe13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1359,7 +1348,6 @@
             // 
             // uiPipe14
             // 
-            this.uiPipe14.Active = true;
             this.uiPipe14.FlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.uiPipe14.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiPipe14.Location = new System.Drawing.Point(383, 293);
@@ -1526,14 +1514,14 @@
             // tabs5
             // 
             this.tabs5.Controls.Add(this.tabPage5);
-            this.tabs5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tabs5.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabs5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabs5.Location = new System.Drawing.Point(838, 225);
             this.tabs5.Name = "tabs5";
             this.tabs5.Pages.Add(this.tabPage5);
             this.tabs5.Size = new System.Drawing.Size(232, 329);
-            styleCard10.Border = 0;
-            this.tabs5.Style = styleCard10;
+            styleCard5.Border = 0;
+            this.tabs5.Style = styleCard5;
             this.tabs5.TabIndex = 1;
             this.tabs5.Text = "tabs5";
             this.tabs5.Type = AntdUI.TabType.Card;
@@ -1675,12 +1663,12 @@
         private Sunny.UI.UIRoundProcess rpMainPipePressure;
         private AntdUI.Label label9;
         private AntdUI.Label label8;
-        private AntdUI.Label label11;
-        private AntdUI.Label label10;
-        private AntdUI.Label label21;
-        private AntdUI.Label label16;
-        private AntdUI.Label label20;
-        private AntdUI.Label label15;
+        private AntdUI.Label pressureMin;
+        private AntdUI.Label pressureMax;
+        private AntdUI.Label leakageMin;
+        private AntdUI.Label trafficMin;
+        private AntdUI.Label leakageMax;
+        private AntdUI.Label trafficMax;
         private AntdUI.Label label19;
         private AntdUI.Label label14;
         private AntdUI.Label label18;

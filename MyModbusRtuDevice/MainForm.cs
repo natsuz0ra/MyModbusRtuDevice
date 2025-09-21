@@ -171,6 +171,8 @@ namespace MyModbusRtuDevice
                 ShowForm<SystemOverview>();
                 service.SubscribeRefreshFormMonitorDataEvent(GetForm<SystemOverview>().GetMonitorDatas);
                 service.SubscribeShowLogEvent(GetForm<SystemOverview>().ShowLog);
+                service.SubscribeConnectEvent(GetForm<SystemOverview>().OnConnect);
+                service.SubscribeDisconnectEvent(GetForm<SystemOverview>().OnDisconnect);
             }
             // 数据跟踪页
             if (button == buttonDataTrack)
@@ -285,11 +287,6 @@ namespace MyModbusRtuDevice
             connectStatusLabel.Text = "通信错误";
             connectStatusLabel2.Text = $"通信错误：[{code}] {message}";
             statusPanel.BackColor = Color.Red;
-        }
-
-        private void SaveData()
-        {
-
         }
     }
 }
