@@ -223,7 +223,6 @@ namespace MyModbusRtuDevice.Forms
                         for (int i = 0; i < device.Variable.Count(); i++)
                         {
                             chart3.Series[i].Points.AddXY(now, (double)(ushort)device.Variable[i].Value);
-                            chart2.Series[i].Points.AddXY(now, (double)(ushort)device.Variable[i].Value);
                             if (chart3.Series[i].Points.Count > 30)
                             {
                                 // 移除最早的坐标点，避免数据过多
