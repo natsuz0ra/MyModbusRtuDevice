@@ -76,6 +76,7 @@
             this.label10 = new AntdUI.Label();
             this.tabPage4 = new AntdUI.TabPage();
             this.tabPage6 = new AntdUI.TabPage();
+            this.saveCfgBtn = new AntdUI.Button();
             this.tabs5.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabs.SuspendLayout();
@@ -86,7 +87,7 @@
             // tabs5
             // 
             this.tabs5.Controls.Add(this.tabPage5);
-            this.tabs5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabs5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabs5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabs5.Location = new System.Drawing.Point(12, 12);
             this.tabs5.Name = "tabs5";
@@ -101,6 +102,7 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.White;
+            this.tabPage5.Controls.Add(this.saveCfgBtn);
             this.tabPage5.Controls.Add(this.writeTimeoutInput);
             this.tabPage5.Controls.Add(this.label9);
             this.tabPage5.Controls.Add(this.writeBufferInput);
@@ -320,7 +322,7 @@
             this.tabs.Controls.Add(this.tabPage1);
             this.tabs.Controls.Add(this.tabPage4);
             this.tabs.Controls.Add(this.tabPage6);
-            this.tabs.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabs.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabs.Location = new System.Drawing.Point(221, 12);
             this.tabs.Name = "tabs";
@@ -530,6 +532,16 @@
             this.tabPage6.TabIndex = 2;
             this.tabPage6.Text = "  设备3  ";
             // 
+            // saveCfgBtn
+            // 
+            this.saveCfgBtn.Location = new System.Drawing.Point(44, 445);
+            this.saveCfgBtn.Name = "saveCfgBtn";
+            this.saveCfgBtn.Size = new System.Drawing.Size(103, 44);
+            this.saveCfgBtn.TabIndex = 18;
+            this.saveCfgBtn.Text = "保存配置";
+            this.saveCfgBtn.Type = AntdUI.TTypeMini.Success;
+            this.saveCfgBtn.Click += new System.EventHandler(this.saveCfgBtn_Click);
+            // 
             // SystemConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -590,5 +602,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn color;
         private System.Windows.Forms.DataGridViewTextBoxColumn min;
         private System.Windows.Forms.DataGridViewTextBoxColumn max;
+        private AntdUI.Button saveCfgBtn;
     }
 }

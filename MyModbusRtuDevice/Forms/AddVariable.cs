@@ -38,10 +38,10 @@ namespace MyModbusRtuDevice.Forms
                 });
                 this.Close();
             }
-            catch (Exception exp)
+            catch (Exception ex)
             {
                 // 如果有错误，那么弹窗提示
-                MessageBox.Show("所填信息格式错误，请重试", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"所填信息格式错误，请重试\n{ex.Message}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

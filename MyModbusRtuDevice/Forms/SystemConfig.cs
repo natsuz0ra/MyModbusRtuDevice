@@ -375,5 +375,43 @@ namespace MyModbusRtuDevice.Forms
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = variables;
         }
+
+        private void saveCfgBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var cm = AppSession.ModbusService.GetCommunicationModel();
+                cm.PortName = serialPortsDropList.Text;
+                cm.BaudRate = Convert.ToInt32(baudDropList.Text);
+                cm.DateBit = Convert.ToInt32(dataBitsDropList.Text);
+                cm.Parity = (Parity)Enum.Parse(typeof(Parity), parityDropList.Text);
+                cm.StopBits = (StopBits)Enum.Parse(typeof(StopBits), stopBitsDropList.Text);
+                cm.ReadBuffterSize = Convert.ToInt32(readBufferInput.Value);
+                cm.ReadTimeout = Convert.ToInt32(readTimeoutInput.Value);
+                cm.WriteBuffterSize = Convert.ToInt32(writeBufferInput.Value);
+                cm.WriteTimeout = Convert.ToInt32(writeTimeoutInput.Value);
+
+                for (int i = 0; i < cm.DeviceList.Count(); i++)
+                {
+                    Control[] slaveInputs = tabs.Pages[i].Controls.Find($"slaveInput{i}", false);
+                    Control[] deviceNameInputs = tabs.Pages[i].Controls.Find($"deviceNameInput{i}", false);
+                    if (slaveInputs.Count() == 0 || deviceNameInputs.Count() == 0)
+                        continue;
+                    AntdUI.Input slaveInput = slaveInputs[0] as AntdUI.Input;
+                    AntdUI.Input deviceNameInput = deviceNameInputs[0] as AntdUI.Input;
+                    if (slaveInput == null || deviceNameInput == null)
+                        continue;
+                    cm.DeviceList[i].SlaveId = Convert.ToByte(slaveInput.Text);
+                    cm.DeviceList[i].Name = deviceNameInput.Text;
+                }
+
+                AppSession.ModbusService.SaveCommunicationModel();
+                MessageBox.Show("配置保存成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"保存失败，请检查配置\n{ex.Message}", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
